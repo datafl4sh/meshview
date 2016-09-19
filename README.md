@@ -11,3 +11,7 @@ followed by a
 
 The code is really crap, one day I will clean it up.
 
+__On Mac OS X:__
+
+    brew tap datafl4sh/code
+    brew install meshview
