@@ -6,12 +6,16 @@ QT += core gui opengl
 
 #CONFIG += debug
 
+mac {
+    CONFIG -= app_bundle
+}
+
 QMAKE_CXXFLAGS += -std=c++11 -stdlib=libc++
 QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.8
 QMAKE_LFLAGS += -stdlib=libc++
 
 TEMPLATE = app
-TARGET = "EMT MeshView"
+TARGET = "meshview"
 DEPENDPATH += .
 INCLUDEPATH += .
 
@@ -19,3 +23,5 @@ INCLUDEPATH += .
 HEADERS += Mesh.h MeshGLWidget.h MainWindow.h ControllerWidget.h
 SOURCES += main.cpp Mesh.cpp MeshGLWidget.cpp MainWindow.cpp \
            ControllerWidget.cpp
+
+ INSTALLS += target
