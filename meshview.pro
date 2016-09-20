@@ -10,9 +10,8 @@ mac {
     CONFIG -= app_bundle
 }
 
-QMAKE_CXXFLAGS += -std=c++11 -stdlib=libc++
+QMAKE_CXXFLAGS += -std=c++11
 QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.8
-QMAKE_LFLAGS += -stdlib=libc++
 
 TEMPLATE = app
 TARGET = "meshview"
